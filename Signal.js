@@ -12,6 +12,7 @@ define(function() {
 		signalFunction.signalName = name;
 		signalFunction.connect = function connect(slot) {
 			connectedSlots.push(slot);
+			return slot;
 		};
 		
 		return signalFunction;
